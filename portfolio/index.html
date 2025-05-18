@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оздоев Рахим — Веб-разработчик</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Оздоев Рахим — Веб-разработчик</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Об авторе</a></li>
+                <li><a href="#projects">Портфолио</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="https://www.instagram.com/maestro06062025/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Об авторе</h2>
+            <article>
+                <p>Меня зовут Оздоев Рахим, я средний фронтенд-разработчик со стажем 3 лет .</p>
+                <p>Создаю современные и производительные веб-приложения, используя новейшие технологии и инструменты (HTML, CSS, JavaScript, React, Vue.js).</p>
+                <p>Давай сделаем твой следующий проект успешным!</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Примеры работ</h2>
+            <div class="grid-container">
+                <div class="project">
+                    <img src="./Снимок экрана (5).png" alt="Проект 1" data-modal-target="#modal1">
+                    <h3>Банковский сервис</h3>
+                    <p>Платформа для банковского обслуживания с высокоскоростной загрузкой и интуитивным интерфейсом.</p>
+                </div>
+                <div class="project">
+                    <img src="./Снимок экрана (6).png" alt="Проект 2" data-modal-target="#modal2">
+                    <h3>Корпоративный портал</h3>
+                    <p>Удобный корпоративный портал для автоматизации рабочих процессов сотрудников.</p>
+                </div>
+                <div class="project">
+                    <img src="./Снимок экрана (8).png" alt="Проект 3" data-modal-target="#modal3">
+                    <h3>Сайт строительной компании</h3>
+                    <p>Современный сайт строительной компании, адаптивный и быстродействующий.</p>
+                </div>
+                <div class="project">
+                    <img src="./Снимок экрана (9).png" alt="Проект 4" data-modal-target="#modal4">
+                    <h3>Кофейня</h3>
+                    <p>Профессиональный лендинг для кофейни с поддержкой всех экранов.</p>
+                </div>
+                <div class="project">
+                    <img src="./Снимок экрана (10).png" alt="Проект 5" data-modal-target="#modal5">
+                    <h3>Автомобили</h3>
+                    <p>Классический автомобильный лендинг с удобным функционалом и быстрым откликом.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Предоставляемые услуги</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Категория проекта</th>
+                        <th>Примерная стоимость</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Статичные HTML/CSS страницы</td>
+                        <td>От 2000₽ до 5000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Средний уровень сложности с JS</td>
+                        <td>От 5000₽ до 10000₽</td>
+                    </tr>
+                    <tr>
+                        <td>Высокий уровень сложности (интерактивные элементы)</td>
+                        <td>От 10000₽ до 20000₽</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reviews">
+            <h2>Что говорят клиенты</h2>
+            <blockquote>"Работы Рахима впечатляют качеством исполнения и скоростью реализации идей."</blockquote>
+            <blockquote>"Профессионализм и пунктуальность делают сотрудничество приятным и эффективным."</blockquote>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться со мной</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Ваш e-mail" required><br>
+                <textarea rows="4" cols="50" placeholder="Напишите ваше сообщение здесь..."></textarea><br>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('#modal1')">×</span>
+                <img src="./Снимок экрана (5).png" alt="Проект 1">
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('#modal2')">×</span>
+                <img src="./Снимок экрана (6).png" alt="Проект 2">
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('#modal3')">×</span>
+                <img src="./Снимок экрана (8).png" alt="Проект 3">
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('#modal4')">×</span>
+                <img src="./Снимок экрана (9).png" alt="Проект 4">
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('#modal5')">×</span>
+                <img src="./Снимок экрана (10).png" alt="Проект 5">
+            </div>
+        </div>
+
+
+        <div id="back-to-top-button">
+            <a href="#top"><i class="fas fa-arrow-up"></i> Наверх</a>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>© 2025 Оздоев Рахим | Веб-разработчик</p>
+        <p>Контакт: <a href="mailto:r@example.com">rozdoev093@gmail.com</a>, Тел.: <a href="tel:+79289184128">+7 928 918-41-28</a> (WhatsApp)</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        window.onscroll = () => {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top-button").style.display = "block";
+            } else {
+                document.getElementById("back-to-top-button").style.display = "none";
+            }
+        };
+
+        function closeModal(id) {
+            document.querySelector(id).style.display = "none";
+        }
+    </script>
+</body>
+</html>
